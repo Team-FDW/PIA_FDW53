@@ -5,7 +5,7 @@ from django.db import models
 class Servicio(models.Model):
     clave = models.AutoField(primary_key = True)
     nombre =models.CharField(max_length=50)
-    descricion = models.CharField(max_length=60)
+    descripcion = models.CharField(max_length=60)
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     fecha_alta = models.DateField(auto_now_add=True)
     fecha_baja = models.DateField(null=True, blank=True)
