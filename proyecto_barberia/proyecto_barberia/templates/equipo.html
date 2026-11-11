@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Equipo</h2>
+    {%for estilista in estilistas%}
+        <p>{{estilista}}</p>
+        <p>{{estilista.mostrar_especialidad}}</p>
+        <p>{{estilista.mostrar_horario}}</p>
+    {%endfor%}
+</body>
+</html>

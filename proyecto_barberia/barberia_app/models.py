@@ -22,7 +22,16 @@ class Estilista(models.Model):
     fecha_alta = models.DateField(auto_now_add=True)
     fecha_baja = models.DateField(null=True, blank=True)
     def __str__(self):
-        return self.nombre 
+        return f"{self.nombre} {self.apellido}"
+
+    @property
+    def mostrar_especialidad (self):
+        return f"{self.especialidad}"
+
+    def mostrar_horario(self):
+        return f"{self.horario_entrada} a {self.horario_salida}"
+
+    
 
 class Producto(models.Model):
     clave = models.CharField(max_length=10)
@@ -52,5 +61,5 @@ class Cliente(models.Model):
     fecha_alta = models.DateField(auto_now_add=True)
     fecha_baja = models.DateField(null=True, blank=True)
     def __str__(self):
-        return self.nombre 
+        return self.nombre + "" + self.apellido
 
