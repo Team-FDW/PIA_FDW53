@@ -1,17 +1,82 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/estilistas.css'%}">
+    <title>Estilistas</title>
 </head>
 <body>
-    <h2>Equipo</h2>
-    {%for estilista in estilistas%}
-        <p>{{estilista}}</p>
-        <p>{{estilista.mostrar_especialidad}}</p>
-        <p>{{estilista.mostrar_horario}}</p>
-    {%endfor%}
+    <div class="margin3">
+        <div class="margin2">
+            <h1>Salon de belleza y barbería "ESTILO ÚNICO"</h1>
+        </div>
+    </div>
+
+    <nav class="barra-nav">
+        <a href="../templates/index.html">Home</a>
+        <a href="../templates/servicios.html">Servicios</a>
+        <a href="{% url 'equipo' %}">Estilistas</a>
+        <a href="../templates/productos.html">Productos</a>
+        <a href="../templates/sucursales.html">Sucursales</a>
+        <a href="../templates/clientes.html">Clientes</a>
+    </nav>
+    <div class="margin3">
+      <div class="margin2">
+        <div class="textformat">
+          <p>
+            En un mundo donde las tendencias cambian constantemente, 
+            en Barbería Estilo único creemos que la verdadera clase 
+            es intemporal. Nuestro compromiso es preservar y 
+            perfeccionar el arte de la barbería clásica, 
+            ofreciendo un servicio de excelencia a la sociedad Sampetrina.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="ev_section">
+      <h2>Nuestros estilistas</h2>
+      <div class="practformat">
+        <article class="article_box_img">
+          <img src="{% static 'img/pexels-cottonbro-3993455.jpg'%}" alt="hairpic1">
+          <img src="{% static 'img/pexels-chadpopulisphotography-30270932.jpg'%}" alt="hairpic2">
+          <img src="{% static 'img/pexels-leonardokfn-7781853.jpg'%}" alt="hairpic3">
+          <img src="{% static 'img/pexels-alexandre-saraiva-carniato-583650-6080357.jpg'%}" alt="hairpic4">
+        </article>
+        <article class="article_box_bd">
+          {%for estilista in estilistas%}
+            <div>
+              <p>{{estilista}}</p>
+              <p>{{estilista.mostrar_especialidad}}</p>
+              <p>Horario:</p>
+              <p>{{estilista.mostrar_horario}}</p>
+            </div>
+          {%endfor%}
+        </article>
+      </div>
+    </section>
+
+    <section class="ev_section">
+      <h2>Nuestros horarios</h2>
+      <div class="practformat">
+        <article class="article_box">
+          <p>Lunes - Viernes: 11 a. m. - 9 p. m.</p>
+          <p>Sabado: 10 a. m. - 7 p. m.</p>
+          <p>Domingo: CERRADO</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="margin3">
+        <div class="margin2">
+          <div class="footerformat">
+            <p>Pagina web by &copy;Fabidev1707</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

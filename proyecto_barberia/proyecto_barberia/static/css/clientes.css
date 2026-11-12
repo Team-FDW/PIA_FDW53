@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(8, 12, 17);
+    height:100%;
+    margin:0;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.margin3 {
+    border: 2px solid rgb(28, 56, 218);
+    justify-content: center;
+    background-color: rgb(8, 12, 17);
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+}
+
+div.margin2 {
+    border: 2px solid rgb(238, 45, 45);
+    justify-content: center;
+    background-color: rgb(8, 12, 17);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+body div >h1{
+    border: 2px solid rgb(255, 255, 255);
+    justify-content: center;
+    background-color: rgb(8, 12, 17);
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.barra-nav {
+    background-color: rgb(33, 34, 36);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barra-nav a {
+    color: rgb(250, 250, 247);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    font-weight: bold;
+    font-size: large;
+}
+
+.barra-nav a:hover{
+    background-color: rgb(8, 12, 17);
+}
+
+section.ev_section{
+    border: 3px solid rgb(28, 56, 218);
+    margin: 10px;
+    background-color: rgb(8, 12, 17);
+}
+
+.ev_section>h2{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(238, 45, 45);
+    margin: 10px;
+}
+
+article.article_box_img{
+   text-align: center;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(8, 12, 17);
+   color: white;
+   padding: 10px;
+   word-break: break-all;
+   display: flex;
+}
+
+article.article_box{
+   text-align: center;
+   height: 100%;
+   width: 100%;
+   background-color: rgb(8, 12, 17);
+   color: white;
+   padding: 10px;
+   word-break: break-all;
+}
+
+article.article_box_img >img{
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+div.practformat{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(248, 247, 247);
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(8, 12, 17);
+    margin: 10px;
+    padding: 10px;
+}
+
+div.footerformat{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(246, 246, 248);
+    justify-content: center;
+    background-color: rgb(33, 34, 36);
+    margin: 0px;
+    padding: 10px;
+}
+
+.article_box ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+div.textformat{
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(248, 248, 247);
+    background-color: rgb(33, 34, 36);
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.textformat p{
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
