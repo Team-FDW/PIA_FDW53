@@ -51,7 +51,7 @@ class Sucursale(models.Model):
     fecha_alta = models.DateField(auto_now_add=True)
     fecha_baja = models.DateField(null=True, blank=True)
     def __str__(self):
-        return self.nombre 
+        return self.calle 
 
 class Cliente(models.Model):
     clave = models.AutoField(primary_key = True)
