@@ -13,7 +13,6 @@ def equipo(request):
     return render(request,"equipo.html", context=datos)
 
 
-
 def servicios(request):
     return render(request, "servicios.html")
 
