@@ -1,0 +1,23 @@
+# Ignorar el .pkl 
+*.pkl
+
+# Ignorar el .json 
+*.json
+
+# Ignorar el .json 
+*.xlsx
+
+# Ignorar el arcivo de configuración de la aplicación
+/.env
+# Ignorar el entorno virtual
+venv/
+
+# Ignorar el entorno virtual
+ambiente/
+
+# Ignorar archivos de Python compilados
+__pycache__/
+*.pyc
+
+# Ignorar archivos de VS Code (opcional)
+.vscode/
